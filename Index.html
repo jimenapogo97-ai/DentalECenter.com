@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Dental Expertise Center - Clínica dental de alta especialidad. Ortodoncia, implantes, estética y cirugía oral con tecnología de vanguardia.">
+    <title>Dental Expertise Center</title>
+    
+
+    <!-- Bootstrap 5 CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Bootstrap Icons CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+       <link rel="stylesheet" href="estilos.css">
+
+    <!-- Google Fonts (Poppins & Plus Jakarta Sans) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="Assets/Logo.png.png">
+
+
+</head>
+<body>
+
+<!-- Header / Navbar Fijo -->
+<header class="sticky-top">
+    <nav class="navbar navbar-expand-lg header-navbar py-3" aria-label="Navegación principal">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <!-- RUTA DE TU IMAGEN PNG: asegúrate de poner tu logo en la misma carpeta o ajustar la ruta -->
+                <img src="Assets/Logo.png.png" alt="Dental Expertise Logo" class="brand-logo">
+            </a>
+
+            <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMain" aria-controls="navbarMain" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarMain">
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Especialidades.html">Nuestros Servicios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="blog.html">Consejos de Salud</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="historia.html">Nuestra Historia</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="citas.html">Contacto</a>
+                    </li>
+                </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<!-- 1. Carrusel Principal (Hero) -->
+<section class="main-carousel-section">
+    <div id="heroCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="5000">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <!-- Slide 1 -->
+            <div class="carousel-item active">
+                <div class="carousel-slide-bg" style="background-image: linear-gradient(rgba(24, 31, 68, 0.65), rgba(24, 31, 68, 0.65)), url('Assets/clinica.jpg'), url('https://images.unsplash.com/photo-1629909613654-28e377c37b09?q=80&w=1600&auto=format&fit=crop');"></div>
+                <div class="carousel-caption d-flex flex-column align-items-center justify-content-center h-100 text-center">
+                    <span class="hero-badge"><i class="bi bi-patch-check-fill text-turquoise"></i> Alta Especialidad</span>
+                    <h1 class="hero-title">Innovación, Precisión y Arte Dental</h1>
+                    <p class="hero-subtitle">Experimente la odontología de vanguardia en un espacio diseñado para su tranquilidad.</p>
+                    <a href="citas.html" class="btn btn-turquoise"><i class="bi bi-calendar-event"></i> Agendar Cita</a>
+                </div>
+            </div>
+            <!-- Slide 2 -->
+            <div class="carousel-item">
+                <div class="carousel-slide-bg" style="background-image: linear-gradient(rgba(24, 31, 68, 0.65), rgba(24, 31, 68, 0.65)), url('Assets/car\ 2.jpg'), url('https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?q=80&w=1600&auto=format&fit=crop');"></div>
+                <div class="carousel-caption d-flex flex-column align-items-center justify-content-center h-100 text-center">
+                    <span class="hero-badge"><i class="bi bi-award-fill text-turquoise"></i> Tecnología 3D</span>
+                    <h1 class="hero-title">Diseño de Sonrisa Personalizado</h1>
+                    <p class="hero-subtitle">Tratamientos estéticos sin dolor respaldados por escaneo digital y materiales premium.</p>
+                    <a href="Especialidades.html" class="btn btn-turquoise"><i class="bi bi-grid-fill"></i> Ver Especialidades</a>
+                </div>
+            </div>
+            <!-- Slide 3 -->
+            <div class="carousel-item">
+                <div class="carousel-slide-bg" style="background-image: linear-gradient(rgba(24, 31, 68, 0.65), rgba(24, 31, 68, 0.65)), url('Assets/Car3.jpg'), url('https://images.unsplash.com/photo-1606811841689-23dfddce3e95?q=80&w=1600&auto=format&fit=crop');"></div>
+                <div class="carousel-caption d-flex flex-column align-items-center justify-content-center h-100 text-center">
+                    <span class="hero-badge"><i class="bi bi-heart-pulse-fill text-turquoise"></i> Atención Humana</span>
+                    <h1 class="hero-title">Salud Oral Integral para su Familia</h1>
+                    <p class="hero-subtitle">Especialistas certificados listos para atender cada etapa de la salud bucal.</p>
+                    <a href="citas.html" class="btn btn-turquoise"><i class="bi bi-envelope-fill"></i> Contactar Ahora</a>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon p-3 rounded-circle" aria-hidden="true"></span>
+            <span class="visually-hidden">Anterior</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon p-3 rounded-circle" aria-hidden="true"></span>
+            <span class="visually-hidden">Siguiente</span>
+        </button>
+    </div>
+</section>
+
+<!-- 2. Sección Nuestros Servicios (Imagen Destacada + Texto) -->
+<section class="py-5 bg-white">
+    <div class="container py-4">
+        <div class="text-center max-w-900 mx-auto">
+            <h2 class="section-title mb-4">Nuestros Servicios</h2>
+            <div class="featured-image-box mb-4">
+                <img src="Assets/clinica.jpg" alt="Instalaciones y equipo médico de la clínica" class="img-fluid rounded-4 shadow-md w-100" onerror="this.src='https://images.unsplash.com/photo-1629909615184-74f495363b67?q=80&w=1200&auto=format&fit=crop'">
+            </div>
+            <p class="lead text-muted lh-lg px-2">
+                En Dental Expertise Center combinamos la experiencia médica especializada con la tecnología odontológica avanzada. Nos dedicamos a devolver la salud, funcionalidad y belleza a su sonrisa mediante tratamientos integrales, indoloros y totalmente adaptados a las necesidades particulares de cada paciente.
+            </p>
+        </div>
+    </div>
+</section>
+
+<!-- 3. Sección Especialidades (Grilla de 7 Tarjetas segun Wireframe) -->
+<section class="py-5 bg-light-section">
+    <div class="container py-4">
+        <div class="text-center mb-5">
+            <span class="section-tag">Especialización Médica</span>
+            <h2 class="section-title">Especialidades</h2>
+        </div>
+
+        <!-- Grilla 3 + 3 + 1 centrada -->
+        <div class="row g-4 justify-content-center">
+            <!-- 1. Odontología General -->
+            <div class="col-lg-4 col-md-6"> 
+                
+                <div class="especialidad-card">
+                    <div class="especialidad-img-wrap">
+                        <img src="Assets/general.jpg" alt="Odontología General" class="especialidad-img" onerror="this.src='https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?q=80&w=600&auto=format&fit=crop'">
+                    </div>
+                    <div class="especialidad-info">
+                        <h3>Odontología General</h3>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 2. Ortodoncia -->
+            <div class="col-lg-4 col-md-6">
+                <div class="especialidad-card">
+                    <div class="especialidad-img-wrap">
+                        <img src="Assets/ortodoncia.jpg" alt="Ortodoncia" class="especialidad-img" onerror="this.src='https://images.unsplash.com/photo-1606811841689-23dfddce3e95?q=80&w=600&auto=format&fit=crop'">
+                    </div>
+                    <div class="especialidad-info">
+                        <h3>Ortodoncia</h3>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 3. Endodoncia -->
+            <div class="col-lg-4 col-md-6">
+                <div class="especialidad-card">
+                    <div class="especialidad-img-wrap">
+                        <img src="Assets/Endodoncia.jpg" alt="Endodoncia" class="especialidad-img" onerror="this.src='https://images.unsplash.com/photo-1579684385127-1ef15d508118?q=80&w=600&auto=format&fit=crop'">
+                    </div>
+                    <div class="especialidad-info">
+                        <h3>Endodoncia</h3>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 4. Periodoncia -->
+            <div class="col-lg-4 col-md-6">
+                <div class="especialidad-card">
+                    <div class="especialidad-img-wrap">
+                        <img src="Assets/periodoncia.jpg" alt="Periodoncia" class="especialidad-img" onerror="this.src='https://images.unsplash.com/photo-1559839734-2b71ea197ec2?q=80&w=600&auto=format&fit=crop'">
+                    </div>
+                    <div class="especialidad-info">
+                        <h3>Periodoncia</h3>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 5. Prostodoncia -->
+            <div class="col-lg-4 col-md-6">
+                <div class="especialidad-card">
+                    <div class="especialidad-img-wrap">
+                        <img src="Assets/prostodoncia.jpg" alt="Prostodoncia" class="especialidad-img" onerror="this.src='https://images.unsplash.com/photo-1609840114035-3c981b782dfe?q=80&w=600&auto=format&fit=crop'">
+                    </div>
+                    <div class="especialidad-info">
+                        <h3>Prostodoncia</h3>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 6. Odontopediatría -->
+            <div class="col-lg-4 col-md-6">
+                <div class="especialidad-card">
+                    <div class="especialidad-img-wrap">
+                        <img src="Assets/ni;a.jpg" alt="Odontopediatría" class="especialidad-img" onerror="this.src='https://images.unsplash.com/photo-1598256989800-fe5f95da9787?q=80&w=600&auto=format&fit=crop'">
+                    </div>
+                    <div class="especialidad-info">
+                        <h3>Odontopediatría</h3>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 7. Cirugía Oral y Maxilofacial (Centrado en la fila 3) -->
+            <div class="col-lg-4 col-md-6">
+                <div class="especialidad-card">
+                    <div class="especialidad-img-wrap">
+                        <img src="Assets/maxilo.jpg" alt="Cirugía Oral y Maxilofacial" class="especialidad-img" onerror="this.src='https://images.unsplash.com/photo-1629909613654-28e377c37b09?q=80&w=600&auto=format&fit=crop'">
+                    </div>
+                    <div class="especialidad-info">
+                        <h3>Cirugía Oral y Maxilofacial</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- 4. Sección ¿Qué dicen nuestros clientes? (Carrusel) -->
+<section class="testimonials-section py-5">
+    <div class="container py-4">
+        <div class="text-center mb-5">
+            <span class="section-tag">Testimonios Reales</span>
+            <h2 class="section-title">¿Qué dicen nuestros clientes?</h2>
+        </div>
+
+        <div id="carouselTestimonials" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="testimonial-card text-center">
+                        <div class="stars-rating mb-3">
+                            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                        </div>
+                        <p class="fs-5 text-dark mb-4 px-md-4">
+                            "El nivel de detalle y profesionalismo en Dental Expertise Center es incomparable. Me realicé un diseño de sonrisa completo y el resultado superó todas mis expectativas."
+                        </p>
+                        <img src="img/cliente-1.jpg" alt="Valeria Mendoza" class="testimonial-avatar mb-3 mx-auto" onerror="this.src='https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=200&auto=format&fit=crop'">
+                        <h4 class="h6 font-heading mb-0">Valeria Mendoza</h4>
+                        <small class="text-muted">Diseño de Sonrisa & Carillas</small>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="testimonial-card text-center">
+                        <div class="stars-rating mb-3">
+                            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                        </div>
+                        <p class="fs-5 text-dark mb-4 px-md-4">
+                            "Siempre tuve fobia a los dentistas hasta que vine a esta clínica. El tratamiento de ortodoncia invisible fue cómodo, rápido y totalmente transparente."
+                        </p>
+                        <img src="img/cliente-2.jpg" alt="Carlos Benítez" class="testimonial-avatar mb-3 mx-auto" onerror="this.src='https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=200&auto=format&fit=crop'">
+                        <h4 class="h6 font-heading mb-0">Carlos Benítez</h4>
+                        <small class="text-muted">Ortodoncia Invisible</small>
+                    </div>
+                </div>
+            </div>
+
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselTestimonials" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon bg-dark rounded-circle p-3" aria-hidden="true"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselTestimonials" data-bs-slide="next">
+                <span class="carousel-control-next-icon bg-dark rounded-circle p-3" aria-hidden="true"></span>
+            </button>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer-main">
+    <div class="container">
+        <div class="row g-4">
+            <div class="col-lg-4 col-md-6">
+                <a class="navbar-brand text-white mb-3 d-inline-flex align-items-center gap-2" href="index.html">
+                    <img src="logo.png" alt="Dental Expertise Logo" class="brand-logo" style="height:35px;" onerror="this.style.display='none'">
+                    <span class="text-white">Dental <span class="text-turquoise">Expertise </span>Center</span>
+                </a>
+                <p class="text-white-50 fs-7 mb-4">Centro odontológico de especialidades con los más altos estándares clínicos.</p>
+            </div>
+            <div class="col-lg-2 col-md-6">
+                <h5 class="footer-title">Navegación</h5>
+                <ul class="footer-links">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="servicios.html">Especialidades</a></li>
+                    <li><a href="consejos.html">Consejos</a></li>
+                    <li><a href="historia.html">Nuestra Historia</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <h5 class="footer-title">Contacto</h5>
+                <p class="text-white-50 fs-7">Moravia 25 metros este del kinder de la escuel Porfirio Brenes, San José, Moravia, La Guaria, 11401<br>polancomaxilo@gmail.com</p>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <h5 class="footer-title">Urgencias</h5>
+                <a href="tel:+18002345678" class="btn btn-outline-light rounded-pill btn-sm">
+                    <i class="bi bi-telephone-outbound"></i> +506 8767 5986
+                </a>
+            </div>
+        </div>
+        <div class="footer-bottom text-center text-white-50">
+            <p class="mb-0"> 2026 Dental Expertise Center. Todos los derechos reservados.</p>
+        </div>
+    </div>
+</footer>
+
+<!-- Bootstrap & JavaScript -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
